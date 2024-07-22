@@ -89,4 +89,21 @@ function sha256($message) {
     return $hash;
 }
 
+function login($username, $password) {
+    $hashedPassword = sha256($password);
+    $file = fopen("user.inf", "r");
+    if ($file) {
+        while (($line = fgets($file)) !== false) {
+            $line = trim($line);
+            list($fileUsername, $permission, $filePassword) = explode(':', $line);
+            if ($username === $fileUsername && $hashedPassword === $filePassword) {
+                fclose($file);
+                return ["success" => true, "permission" => $permission];
+            }
+        }
+        fclose($file);
+    }
+    return ["success" => false, "permission" => null];
+}
+
 ?>
