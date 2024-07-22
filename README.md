@@ -60,3 +60,5 @@ JsonDB is licensed under the GPLv2 License. See the [LICENSE](LICENSE) file for 
 
 If you have any questions or feedback, please open an issue on GitHub or contact us at GitHub.
 
+## C
+[![Stargazers over time](https://starchart.cc/LightDevTeam/JsonDB.svg?variant=adaptive)](https://starchart.cc/LightDevTeam/JsonDB)
