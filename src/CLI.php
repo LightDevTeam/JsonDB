@@ -6,6 +6,7 @@
 // Check for the command and execute corresponding functionality
 if ($argc < 2) {
     echo "Usage: php CLI.php <command> [options]\n";
+    echo "Get help: https://github.com/LightDevTeam/JsonDB/wiki/CLI\n";
     exit(1);
 }
 
